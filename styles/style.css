@@ -270,9 +270,12 @@ fieldset {
   width: 19px;
   height: 19px;
   border: 1px solid #fff;
+  position: relative;
 }
 
-.search-form__label input[type="checkbox"]:checked + span {
+.search-form__label input[type="checkbox"]:checked + span::after {
+  position: absolute;
+  content: "";
   background-color: #fff;
   width: 15px;
   height: 15px;
